@@ -1,0 +1,25 @@
+{
+  "name": "futuristic-portfolio",
+  "version": "1.0.0",
+  "description": "A modern portfolio website with glassmorphism design and smooth animations",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx serve .",
+    "build": "echo 'No build process needed for static site'",
+    "deploy": "echo 'Upload files to your hosting provider'"
+  },
+  "keywords": [
+    "portfolio",
+    "glassmorphism",
+    "responsive",
+    "dark-mode",
+    "animations",
+    "modern-web"
+  ],
+  "author": "Rahul Talvar",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}

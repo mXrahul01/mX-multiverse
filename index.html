@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Talvar - Data Analyst | ML Engineer | AI Enthusiast</title>
+    <meta name="description" content="Rahul Talvar - Data Analyst, Machine Learning Engineer, and AI Enthusiast specializing in data science, deep learning, and predictive modeling.">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#218085">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Rahul Talvar">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Rahul Talvar - Data Analyst & ML Engineer">
+    <meta property="og:description" content="Transforming data into insights with AI and Machine Learning">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rahul Talvar - Data Analyst & ML Engineer">
+    <meta name="twitter:description" content="Transforming data into insights with AI and Machine Learning">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="data:application/json,{%22name%22:%22Rahul%20Talvar%20Portfolio%22,%22short_name%22:%22RT%20Portfolio%22,%22description%22:%22Data%20Analyst%20and%20ML%20Engineer%20Portfolio%22,%22start_url%22:%22.%22,%22display%22:%22standalone%22,%22theme_color%22:%22%23218085%22,%22background_color%22:%22%231f2121%22,%22icons%22:[{%22src%22:%22data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23218085'/><text x='50' y='60' text-anchor='middle' fill='white' font-size='40' font-weight='bold'>RT</text></svg>%22,%22sizes%22:%22192x192%22,%22type%22:%22image/svg+xml%22}]}">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="loading-cube">
+                    <div class="cube-face cube-front">RT</div>
+                    <div class="cube-face cube-back">RT</div>
+                    <div class="cube-face cube-left">RT</div>
+                    <div class="cube-face cube-right">RT</div>
+                    <div class="cube-face cube-top">RT</div>
+                    <div class="cube-face cube-bottom">RT</div>
+                </div>
+            </div>
+            <div class="loading-text">
+                <span class="loading-word">Initializing</span>
+                <span class="loading-dots">...</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+                <div class="loading-glow"></div>
+            </div>
+            <div class="loading-percentage">0%</div>
+        </div>
+        <div class="loading-particles"></div>
+    </div>
+
+    <!-- Cursor Follower -->
+    <div class="cursor-follower" id="cursor-follower">
+        <div class="cursor-inner"></div>
+        <div class="cursor-outer"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-cube">
+                    <span class="logo-text">RT</span>
+                    <div class="logo-glow"></div>
+                </div>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-text="Home">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-label">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-text="About">
+                        <span class="nav-icon">👨‍💻</span>
+                        <span class="nav-label">About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-text="Skills">
+                        <span class="nav-icon">⚡</span>
+                        <span class="nav-label">Skills</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-text="Projects">
+                        <span class="nav-icon">🚀</span>
+                        <span class="nav-label">Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-text="Contact">
+                        <span class="nav-icon">📧</span>
+                        <span class="nav-label">Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle hologram-btn" id="theme-toggle">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                    <div class="btn-glow"></div>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <canvas id="neural-network-canvas" class="neural-canvas"></canvas>
+            <canvas id="particles-canvas" class="particles-canvas"></canvas>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+            <div class="gradient-mesh"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-greeting">
+                    <span class="greeting-wave">👋</span>
+                    <span class="greeting-text">Hello, I'm</span>
+                </div>
+                <h1 class="hero-name">
+                    <span class="name-part" data-text="Rahul">Rahul</span>
+                    <span class="name-part" data-text="Talvar">Talvar</span>
+                </h1>
+                <div class="hero-role">
+                    <div class="role-container">
+                        <span class="role-text" id="typing-text">Data Analyst</span>
+                        <span class="cursor-blink">|</span>
+                    </div>
+                </div>
+                <p class="hero-description">
+                    Transforming complex data into actionable insights through the power of 
+                    <span class="highlight-text">Machine Learning</span> and 
+                    <span class="highlight-text">Artificial Intelligence</span>
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="3">0</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="94">0</div>
+                        <div class="stat-label">% Accuracy</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="12">0</div>
+                        <div class="stat-label">Skills</div>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary hologram-btn hero-btn">
+                        <span class="btn-content">
+                            <i class="fas fa-rocket"></i>
+                            <span>Explore Projects</span>
+                        </span>
+                        <div class="btn-glow"></div>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary hologram-btn hero-btn">
+                        <span class="btn-content">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Get In Touch</span>
+                        </span>
+                        <div class="btn-glow"></div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="avatar-container">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-core">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <div class="orbit-ring orbit-1"></div>
+                    <div class="orbit-ring orbit-2"></div>
+                    <div class="orbit-ring orbit-3"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <div class="scroll-arrows">
+                <div class="scroll-arrow"></div>
+                <div class="scroll-arrow"></div>
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title glitch" data-text="About Me">About Me</h2>
+                <div class="section-subtitle">Get to know the person behind the data</div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-cards">
+                    <div class="glass-card about-card tilt-card" data-scroll>
+                        <div class="card-icon-container">
+                            <div class="card-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h3>Education Journey</h3>
+                        <div class="education-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-year">2021-2025</div>
+                                <div class="timeline-content">
+                                    <h4>BE in AI & Data Science</h4>
+                                    <p>Ajeenkya DY Patil School Of Engineering</p>
+                                    <div class="timeline-badge">Ongoing</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2021</div>
+                                <div class="timeline-content">
+                                    <h4>Higher Secondary</h4>
+                                    <p>85.83% Achievement</p>
+                                    <div class="timeline-badge">Completed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card about-card tilt-card" data-scroll>
+                        <div class="card-icon-container">
+                            <div class="card-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h3>My Passion</h3>
+                        <p>
+                            I'm passionate about leveraging artificial intelligence and machine learning 
+                            to solve complex real-world problems. With expertise in data analysis, 
+                            deep learning, and predictive modeling, I transform raw data into 
+                            actionable insights that drive business decisions.
+                        </p>
+                        <div class="passion-metrics">
+                            <div class="metric">
+                                <i class="fas fa-code"></i>
+                                <span>1000+ Hours Coding</span>
+                            </div>
+                            <div class="metric">
+                                <i class="fas fa-chart-line"></i>
+                                <span>50+ Models Built</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card about-card tilt-card" data-scroll>
+                        <div class="card-icon-container">
+                            <div class="card-icon">
+                                <i class="fas fa-globe-asia"></i>
+                            </div>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h3>Connect With Me</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Pune, India</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>rahultalvar902@gmail.com</span>
+                            </div>
+                            <div class="languages-grid">
+                                <div class="language-orb">EN</div>
+                                <div class="language-orb">HI</div>
+                                <div class="language-orb">MR</div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-primary hologram-btn resume-btn" id="download-resume">
+                            <span class="btn-content">
+                                <i class="fas fa-download"></i>
+                                <span>Download Resume</span>
+                            </span>
+                            <div class="btn-glow"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title glitch" data-text="Technical Universe">Technical Universe</h2>
+                <div class="section-subtitle">Explore my constellation of technical skills</div>
+            </div>
+            
+            <div class="skills-galaxy" data-scroll>
+                <div class="galaxy-center">
+                    <div class="center-core">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                </div>
+                
+                <div class="skill-systems">
+                    <div class="skill-system" data-category="programming">
+                        <div class="system-label">Programming</div>
+                        <div class="skill-orbits">
+                            <div class="skill-node" data-skill="Python" data-level="90">
+                                <div class="node-core">Py</div>
+                                <div class="node-glow"></div>
+                            </div>
+                            <div class="skill-node" data-skill="SQL" data-level="85">
+                                <div class="node-core">SQL</div>
+                                <div class="node-glow"></div>
+                            </div>
+                            <div class="skill-node" data-skill="JavaScript" data-level="75">
+                                <div class="node-core">JS</div>
+                                <div class="node-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-system" data-category="ml">
+                        <div class="system-label">ML & AI</div>
+                        <div class="skill-orbits">
+                            <div class="skill-node" data-skill="Machine Learning" data-level="90">
+                                <div class="node-core">ML</div>
+                                <div class="node-glow"></div>
+                            </div>
+                            <div class="skill-node" data-skill="Deep Learning" data-level="85">
+                                <div class="node-core">DL</div>
+                                <div class="node-glow"></div>
+                            </div>
+                            <div class="skill-node" data-skill="Neural Networks" data-level="80">
+                                <div class="node-core">NN</div>
+                                <div class="node-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-system" data-category="data">
+                        <div class="system-label">Data Analysis</div>
+                        <div class="skill-orbits">
+                            <div class="skill-node" data-skill="Pandas" data-level="90">
+                                <div class="node-core">PD</div>
+                                <div class="node-glow"></div>
+                            </div>
+                            <div class="skill-node" data-skill="NumPy" data-level="88">
+                                <div class="node-core">NP</div>
+                                <div class="node-glow"></div>
+                            </div>
+                            <div class="skill-node" data-skill="Scikit-learn" data-level="85">
+                                <div class="node-core">SK</div>
+                                <div class="node-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-system" data-category="tools">
+                        <div class="system-label">Tools</div>
+                        <div class="skill-orbits">
+                            <div class="skill-node" data-skill="Tableau" data-level="85">
+                                <div class="node-core">TB</div>
+                                <div class="node-glow"></div>
+                            </div>
+                            <div class="skill-node" data-skill="Git" data-level="80">
+                                <div class="node-core">Git</div>
+                                <div class="node-glow"></div>
+                            </div>
+                            <div class="skill-node" data-skill="Flask" data-level="75">
+                                <div class="node-core">FL</div>
+                                <div class="node-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="connecting-lines"></div>
+            </div>
+            
+            <div class="skill-tooltip" id="skill-tooltip">
+                <div class="tooltip-header">
+                    <span class="tooltip-skill"></span>
+                    <span class="tooltip-level"></span>
+                </div>
+                <div class="tooltip-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title glitch" data-text="Featured Projects">Featured Projects</h2>
+                <div class="section-subtitle">Innovative solutions powered by data science</div>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card hologram-card tilt-card" data-scroll>
+                    <div class="card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-x-ray"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-indicator active"></span>
+                            <span>Production Ready</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Chest X-Ray Disease Prediction</h3>
+                        <p class="project-description">
+                            Revolutionary deep learning system leveraging Liquid Neural Networks for 
+                            accurate chest X-ray disease detection with real-time diagnostic capabilities.
+                        </p>
+                        
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <div class="metric-value">94%</div>
+                                <div class="metric-label">Pneumonia Accuracy</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">90%</div>
+                                <div class="metric-label">Lung Opacity</div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-constellation">
+                            <div class="tech-node" data-tech="Python">Py</div>
+                            <div class="tech-node" data-tech="Deep Learning">DL</div>
+                            <div class="tech-node" data-tech="LNN">LNN</div>
+                            <div class="tech-node" data-tech="Flask">FL</div>
+                            <div class="tech-node" data-tech="Medical AI">AI</div>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="project-link primary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card hologram-card tilt-card" data-scroll>
+                    <div class="card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-indicator completed"></span>
+                            <span>Completed</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Loan Default Analysis</h3>
+                        <p class="project-description">
+                            Comprehensive predictive modeling system for banking operations with 
+                            actionable insights for risk assessment and decision-making optimization.
+                        </p>
+                        
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <div class="metric-value">87%</div>
+                                <div class="metric-label">Model Accuracy</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">15%</div>
+                                <div class="metric-label">Risk Reduction</div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-constellation">
+                            <div class="tech-node" data-tech="Python">Py</div>
+                            <div class="tech-node" data-tech="Machine Learning">ML</div>
+                            <div class="tech-node" data-tech="Preprocessing">PP</div>
+                            <div class="tech-node" data-tech="Analytics">AN</div>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="project-link primary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Details</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card hologram-card tilt-card" data-scroll>
+                    <div class="card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-indicator archived"></span>
+                            <span>Research</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Uber Data Analysis</h3>
+                        <p class="project-description">
+                            Comprehensive exploratory data analysis and visualization project 
+                            uncovering operational patterns and strategic insights.
+                        </p>
+                        
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <div class="metric-value">1M+</div>
+                                <div class="metric-label">Data Points</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">15</div>
+                                <div class="metric-label">Key Insights</div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-constellation">
+                            <div class="tech-node" data-tech="Python">Py</div>
+                            <div class="tech-node" data-tech="Pandas">PD</div>
+                            <div class="tech-node" data-tech="Visualization">VZ</div>
+                            <div class="tech-node" data-tech="Tableau">TB</div>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="project-link primary" target="_blank">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Analysis</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Achievements Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title glitch" data-text="Experience & Achievements">Experience & Achievements</h2>
+                <div class="section-subtitle">Professional journey and recognitions</div>
+            </div>
+            
+            <div class="experience-content">
+                <div class="timeline-container" data-scroll>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3>Data Science Intern</h3>
+                                <div class="company-info">
+                                    <span class="company">Technophilia Solution</span>
+                                    <span class="period">Dec 2023 - Jan 2024</span>
+                                </div>
+                            </div>
+                            <div class="achievement-metrics">
+                                <div class="achievement">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-trending-up"></i>
+                                    </div>
+                                    <div class="achievement-content">
+                                        <span class="achievement-text">Developed employee performance system</span>
+                                        <span class="achievement-metric">30% efficiency improvement</span>
+                                    </div>
+                                </div>
+                                <div class="achievement">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="achievement-content">
+                                        <span class="achievement-text">Automated ML evaluation process</span>
+                                        <span class="achievement-metric">20% manual effort reduction</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certifications-grid" data-scroll>
+                    <h3 class="subsection-title">Certifications & Training</h3>
+                    <div class="cert-carousel-container">
+                        <div class="cert-carousel">
+                            <div class="cert-track" id="cert-track">
+                                <div class="cert-card">
+                                    <div class="cert-icon">
+                                        <i class="fas fa-medal"></i>
+                                    </div>
+                                    <h4>Machine Learning Specialization</h4>
+                                    <p class="cert-provider">Coursera</p>
+                                    <p class="cert-year">2023</p>
+                                    <div class="cert-glow"></div>
+                                </div>
+                                <div class="cert-card">
+                                    <div class="cert-icon">
+                                        <i class="fas fa-certificate"></i>
+                                    </div>
+                                    <h4>Data Science Course</h4>
+                                    <p class="cert-provider">Technophilia Solution</p>
+                                    <p class="cert-year">2023</p>
+                                    <div class="cert-glow"></div>
+                                </div>
+                                <div class="cert-card">
+                                    <div class="cert-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <h4>SQL Bootcamp</h4>
+                                    <p class="cert-provider">Professional Training</p>
+                                    <p class="cert-year">2023</p>
+                                    <div class="cert-glow"></div>
+                                </div>
+                                <div class="cert-card">
+                                    <div class="cert-icon">
+                                        <i class="fas fa-user-graduate"></i>
+                                    </div>
+                                    <h4>Leadership Development</h4>
+                                    <p class="cert-provider">Professional Institute</p>
+                                    <p class="cert-year">2023</p>
+                                    <div class="cert-glow"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-btn prev-btn" id="prev-cert">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn next-btn" id="next-cert">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title glitch" data-text="Let's Connect">Let's Connect</h2>
+                <div class="section-subtitle">Ready to transform your data into insights?</div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-scroll>
+                    <div class="contact-main">
+                        <h3>Get In Touch</h3>
+                        <p>
+                            Ready to bring your data science project to life? Let's discuss how 
+                            I can help you transform your data into valuable insights and drive 
+                            innovation through AI and machine learning.
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <a href="mailto:rahultalvar902@gmail.com">rahultalvar902@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+919156184711">+91 9156184711</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Location</h4>
+                                    <span>Pune, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-orbs">
+                        <a href="https://linkedin.com/in/rahultalvar" target="_blank" class="social-orb linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                            <div class="orb-glow"></div>
+                        </a>
+                        <a href="mailto:rahultalvar902@gmail.com" class="social-orb email">
+                            <i class="fas fa-envelope"></i>
+                            <div class="orb-glow"></div>
+                        </a>
+                        <a href="#" target="_blank" class="social-orb github">
+                            <i class="fab fa-github"></i>
+                            <div class="orb-glow"></div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container" data-scroll>
+                    <form class="contact-form hologram-card" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-header">
+                            <h3>Send Message</h3>
+                            <div class="form-status-light" id="form-light"></div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Full Name</label>
+                                <div class="input-glow"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Email Address</label>
+                                <div class="input-glow"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                            <div class="input-glow"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Message</label>
+                            <div class="input-glow"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary hologram-btn form-submit">
+                            <span class="btn-content">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Launch Message</span>
+                            </span>
+                            <div class="btn-glow"></div>
+                        </button>
+                    </form>
+                    
+                    <div class="form-status" id="form-status">
+                        <div class="status-icon"></div>
+                        <div class="status-message"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <div class="logo-cube">
+                            <span class="logo-text">RT</span>
+                            <div class="logo-glow"></div>
+                        </div>
+                        <div class="footer-tagline">
+                            <p>Transforming Data into Intelligence</p>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="footer-section">
+                            <h4>Navigation</h4>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-section">
+                            <h4>Connect</h4>
+                            <ul>
+                                <li><a href="https://linkedin.com/in/rahultalvar" target="_blank">LinkedIn</a></li>
+                                <li><a href="mailto:rahultalvar902@gmail.com">Email</a></li>
+                                <li><a href="#" target="_blank">GitHub</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; 2024 Rahul Talvar. Crafted with passion for data and AI.</p>
+                    </div>
+                    <div class="tech-badge">
+                        <span>Powered by Innovation</span>
+                        <div class="badge-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
